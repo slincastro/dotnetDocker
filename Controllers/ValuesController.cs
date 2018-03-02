@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -20,7 +21,17 @@ namespace webApi.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "I´m running on docker .... just one for that !!";
+            var beerBuilder = new StringBuilder();
+        beerBuilder.Append("  _.._..,_,_");
+        beerBuilder.Append("(          )");
+        beerBuilder.Append(" ]~,\"-.-~~[");
+       beerBuilder.Append(".=])' (;  ([");
+       beerBuilder.Append("| ]:: '    [");
+       beerBuilder.Append("'=]): .)  ([");
+       beerBuilder.Append("  |:: '    |");
+       beerBuilder.Append("   ~~----~~");
+
+            return "I´m running on docker .... just one for that !!" + beerBuilder.ToString();
         }
 
         // POST api/values
