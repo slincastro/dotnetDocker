@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  webapi:
+    image: webapiapp
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: spikeWebApi
+    ports:
+      - 5000:80
+
