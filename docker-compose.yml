@@ -6,7 +6,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: spikeWebApi
+    container_name: justOneContainer
     ports:
       - 5000:80
 
