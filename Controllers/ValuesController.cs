@@ -22,14 +22,22 @@ namespace webApi.Controllers
         public string Get(int id)
         {
             var beerBuilder = new StringBuilder();
-        beerBuilder.Append("  _.._..,_,_");
-        beerBuilder.Append("(          )");
-        beerBuilder.Append(" ]~,\"-.-~~[");
-       beerBuilder.Append(".=])' (;  ([");
-       beerBuilder.Append("| ]:: '    [");
-       beerBuilder.Append("'=]): .)  ([");
-       beerBuilder.Append("  |:: '    |");
-       beerBuilder.Append("   ~~----~~");
+            beerBuilder.Append(Environment.NewLine);
+            beerBuilder.Append("  _.._..,_,_");
+            beerBuilder.Append(Environment.NewLine);
+            beerBuilder.Append(" (          )");
+            beerBuilder.Append(Environment.NewLine);
+            beerBuilder.Append("  ]~,\"-.-~~[");
+            beerBuilder.Append(Environment.NewLine);
+            beerBuilder.Append(".=])' (;  ([");
+            beerBuilder.Append(Environment.NewLine);
+            beerBuilder.Append("| ]:: '    [");
+            beerBuilder.Append(Environment.NewLine);
+            beerBuilder.Append("'=]): .)  ([");
+            beerBuilder.Append(Environment.NewLine);
+            beerBuilder.Append("  |:: '    |");
+            beerBuilder.Append(Environment.NewLine);
+            beerBuilder.Append("   ~~----~~");
 
             return "I´m running on docker .... just one for that !!" + beerBuilder.ToString();
         }
